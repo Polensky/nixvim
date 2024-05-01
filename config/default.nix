@@ -22,7 +22,7 @@
     };
   };
 
-  plugins.nvim-cmp = {
+  plugins.cmp = {
     enable = true;
     mapping = {
       "<CR>" = "cmp.mapping.confirm({ select = true })";
