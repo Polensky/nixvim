@@ -59,10 +59,11 @@
 				};
       };
     };
-    cmp-nvim-lsp = {enable = true;}; # lsp
-    cmp-nvim-lsp-document-symbol = {enable = true;}; # lsp
-    cmp-buffer = {enable = true;};
-    cmp-path = {enable = true;};
+    cmp-nvim-lsp.enable = true;
+    cmp-nvim-lsp-document-symbol.enable = true;
+    cmp-buffer.enable = true;
+    cmp-path.enable = true;
+		cmp_luasnip.enable = true;
   };
 
   extraPlugins = with pkgs.vimPlugins; [
