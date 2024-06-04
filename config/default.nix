@@ -97,8 +97,8 @@
       mode = "n";
     }
     {
-      action = "<C-j>j";
-      key = "<leader>wh";
+      action = "<C-w>j";
+      key = "<leader>wj";
       mode = "n";
     }
     {
