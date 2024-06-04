@@ -75,5 +75,41 @@
       key = "<Esc>";
       mode = "n";
     }
+    {
+      action = "<cmd>:w<CR>";
+      key = "<leader>fs";
+      mode = "n";
+    }
+		# Split navigation
+    {
+      action = "<C-w>l";
+      key = "<leader>wl";
+      mode = "n";
+    }
+    {
+      action = "<C-w>h";
+      key = "<leader>wh";
+      mode = "n";
+    }
+    {
+      action = "<C-w>k";
+      key = "<leader>wk";
+      mode = "n";
+    }
+    {
+      action = "<C-j>j";
+      key = "<leader>wh";
+      mode = "n";
+    }
+    {
+      action = "<cmd>vsplit<CR>";
+      key = "<leader>wv";
+      mode = "n";
+    }
+    {
+      action = "<cmd>split<CR>";
+      key = "<leader>ws";
+      mode = "n";
+    }
   ];
 }
