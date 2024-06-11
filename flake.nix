@@ -13,6 +13,7 @@
     ...
   } @ inputs: let
     config = import ./config; # import the module directly
+		phone = import ./config/phone.nix;
   in
     flake-parts.lib.mkFlake {inherit inputs;} {
       systems = [
@@ -37,7 +38,12 @@
             # inherit (inputs) foo;
           };
         };
+				nixvimPhoneModule = {
+          inherit pkgs;
+          module = phone;
+				};
         nvim = nixvim'.makeNixvimWithModule nixvimModule;
+        nvim_phone = nixvim'.makeNixvimWithModule nixvimPhoneModule;
       in {
         checks = {
           # Run `nix flake check .` to verify that your config is not broken
@@ -47,6 +53,8 @@
         packages = {
           # Lets you run `nix run .` to start nixvim
           default = nvim;
+
+					phone = nvim_phone;
         };
       };
     };
