@@ -18,6 +18,10 @@
 					action = "buffers";
 					options.desc = "search buffers";
 				};
+				"<leader>ff" = {
+					action = "find_files";
+					options.desc = "search files in CWD";
+				};
 			};
 		};
 	};
