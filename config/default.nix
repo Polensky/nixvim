@@ -22,9 +22,10 @@
   plugins = {
     lualine = {
       enable = true;
-      theme = "everforest";
+			settings.options.theme = "everforest";
     };
-    surround.enable = true;
+		web-devicons.enable = true;
+    vim-surround.enable = true;
     treesitter.enable = true;
   };
 
@@ -33,7 +34,7 @@
     servers = {
       gopls.enable = true;
       nixd.enable = true;
-      elixirls.enable = true;
+      lexical.enable = true;
       yamlls.enable = true;
 			tailwindcss.enable = true;
     };

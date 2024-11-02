@@ -21,9 +21,10 @@
   plugins = {
     lualine = {
       enable = true;
-      theme = "everforest";
+			settings.options.theme = "everforest";
     };
-    surround.enable = true;
+		web-devicons.enable = true;
+    vim-surround.enable = true;
     treesitter.enable = true;
   };
 
