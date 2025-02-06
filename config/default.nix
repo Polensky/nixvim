@@ -32,11 +32,9 @@
   plugins.lsp = {
     enable = true;
     servers = {
-      gopls.enable = true;
       nixd.enable = true;
-      lexical.enable = true;
       yamlls.enable = true;
-			tailwindcss.enable = true;
+			bashls.enable = true;
     };
   };
 
